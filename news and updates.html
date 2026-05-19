@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News & Updates | Aura Precision Health</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: "#0D2B1E" /* Deep, authoritative dark green */,
+              mint: "#F4F7F5" /* Very soft, clean off-white green for backgrounds */,
+              sage: "#8FA697" /* Muted, calming mid-tone green for accents */,
+              emerald:
+                "#2D6A4F" /* Rich green for primary CTAs and highlights */,
+              emeraldHover: "#1B4332" /* Darker emerald for hover states */,
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', "serif"],
+              sans: ['"DM Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-mint text-forest font-sans antialiased selection:bg-emerald selection:text-white"
+  >
+    <header
+      class="fixed w-full top-0 z-50 bg-mint/80 backdrop-blur-md border-b border-sage/10 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="index.html"
+          class="text-2xl font-serif font-semibold tracking-wide text-forest"
+        >
+          AURA
+        </a>
+
+        <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+          <a href="services.html" class="hover:text-emerald transition-colors"
+            >Services</a
+          >
+          <a href="physicians.html" class="hover:text-emerald transition-colors"
+            >Physicians</a
+          >
+          <a href="about us.html" class="hover:text-emerald transition-colors"
+            >About Us</a
+          >
+          <a
+            href="news and updates.html"
+            class="hover:text-emerald transition-colors"
+            >News and Updates</a
+          >
+        </nav>
+        <div class="hidden md:flex items-center">
+          <a
+            href="index.html#contact"
+            class="bg-emerald hover:bg-emeraldHover text-white px-6 py-2.5 rounded text-sm font-medium transition-all shadow-sm"
+            >Schedule Appointment</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-forest pt-40 pb-24 px-6 text-mint overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div
+          class="absolute inset-0 bg-[radial-gradient(#8FA697_1px,transparent_1px)] [background-size:16px_16px]"
+        ></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <p
+          class="text-sage font-semibold tracking-widest text-xs uppercase mb-3"
+        >
+          Aura Intelligence
+        </p>
+        <h1 class="text-4xl md:text-6xl font-serif leading-tight mb-6">
+          Medical Insights & Institutional News
+        </h1>
+        <p
+          class="text-lg text-mint/80 font-light leading-relaxed max-w-2xl mx-auto"
+        >
+          Stay informed on evolving multi-omic methodologies, updates regarding
+          diagnostic advancements, and recently published clinical case studies.
+        </p>
+      </div>
+    </section>
+
+    <section id="news" class="py-24 px-6 max-w-7xl mx-auto">
+      <span
+        class="text-xs font-semibold text-emerald uppercase tracking-widest block mb-6"
+        >Latest Briefing</span
+      >
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-sage/30 pb-16"
+      >
+        <div class="lg:col-span-7">
+          <img
+            src="https://images.unsplash.com/photo-1631553127989-4351997692f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            alt="Laboratory genetic sequencing array"
+            class="w-full h-[400px] object-cover rounded shadow-md border border-sage/20"
+          />
+        </div>
+        <div class="lg:col-span-5 space-y-4">
+          <div
+            class="flex items-center gap-4 text-xs font-medium text-forest/60"
+          >
+            <span>Clinical Research</span>
+            <span>•</span>
+            <span>May 14, 2026</span>
+          </div>
+          <h2
+            class="text-3xl font-serif leading-tight text-forest hover:text-emerald transition-colors"
+          >
+            <a href="#"
+              >The Impact of Early Plaque Identification via Multi-Parametric
+              Whole Body Scans</a
+            >
+          </h2>
+          <p class="text-forest/70 font-light leading-relaxed">
+            Our diagnostic faculty recently finalized a 24-month clinical
+            evaluation mapping internal arterial changes. The study demonstrates
+            how subclinical soft plaque buildup can be reliably traced prior to
+            showing elevated readings on standard biomarker panels.
+          </p>
+          <div class="pt-4">
+            <a
+              href="#"
+              class="text-sm font-medium text-emerald hover:text-emeraldHover transition-colors inline-flex items-center gap-2"
+            >
+              Read Full Report <span class="text-lg">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-24 px-6 max-w-7xl mx-auto">
+      <div
+        class="flex flex-wrap gap-6 border-b border-sage/20 pb-6 mb-12 text-sm font-medium"
+      >
+        <button
+          data-cat-filter="all"
+          class="text-emerald border-b-2 border-emerald pb-6 -mb-[26px] focus:outline-none transition-all"
+        >
+          All Updates
+        </button>
+        <button
+          data-cat-filter="clinical"
+          class="text-forest/60 hover:text-forest focus:outline-none transition-all pb-6 -mb-[26px]"
+        >
+          Clinical Studies
+        </button>
+        <button
+          data-cat-filter="facility"
+          class="text-forest/60 hover:text-forest focus:outline-none transition-all pb-6 -mb-[26px]"
+        >
+          Facility Announcements
+        </button>
+        <button
+          data-cat-filter="genomic"
+          class="text-forest/60 hover:text-forest focus:outline-none transition-all pb-6 -mb-[26px]"
+        >
+          Genomic Science
+        </button>
+      </div>
+
+      <div
+        id="articles-container"
+        class="grid grid-cols-1 md:grid-cols-3 gap-12 min-h-[380px]"
+      >
+        <div
+          data-category="clinical"
+          data-page="1"
+          class="article-card space-y-4 flex flex-col justify-between transition-all duration-300"
+        >
+          <div class="space-y-4">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Doctor reviewing continuous metrics"
+              class="w-full h-56 object-cover rounded shadow-sm"
+            />
+            <div
+              class="flex items-center gap-4 text-xs font-medium text-forest/60"
+            >
+              <span>Clinical Studies</span>
+              <span>•</span>
+              <span>April 28, 2026</span>
+            </div>
+            <h3
+              class="text-xl font-serif text-forest hover:text-emerald transition-colors"
+            >
+              <a href="#"
+                >Understanding Glycemic Variability Pipelines in Non-Diabetic
+                Demographics</a
+              >
+            </h3>
+            <p class="text-sm text-forest/70 font-light leading-relaxed">
+              Analyzing daily blood sugar tracking data uncovers micro-spikes
+              that affect sleep cycles, autonomic stress trends, and everyday
+              cellular energy.
+            </p>
+          </div>
+          <div class="pt-2">
+            <a
+              href="#"
+              class="text-xs font-semibold text-emerald hover:text-emeraldHover transition-colors uppercase tracking-wider"
+              >Read Article</a
+            >
+          </div>
+        </div>
+
+        <div
+          data-category="facility"
+          data-page="1"
+          class="article-card space-y-4 flex flex-col justify-between transition-all duration-300"
+        >
+          <div class="space-y-4">
+            <img
+              src="https://images.unsplash.com/photo-1511174511575-235b9c24473a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Advanced diagnostic laboratory equipment"
+              class="w-full h-56 object-cover rounded shadow-sm"
+            />
+            <div
+              class="flex items-center gap-4 text-xs font-medium text-forest/60"
+            >
+              <span>Facility Announcements</span>
+              <span>•</span>
+              <span>March 19, 2026</span>
+            </div>
+            <h3
+              class="text-xl font-serif text-forest hover:text-emerald transition-colors"
+            >
+              <a href="#"
+                >Aura Installs Upgraded Next-Generation 3T MRI Imaging
+                Frameworks</a
+              >
+            </h3>
+            <p class="text-sm text-forest/70 font-light leading-relaxed">
+              Our New York laboratory has updated its core imaging bay, reducing
+              active scanning time by 20% while doubling localized spatial
+              visualization clarity.
+            </p>
+          </div>
+          <div class="pt-2">
+            <a
+              href="#"
+              class="text-xs font-semibold text-emerald hover:text-emeraldHover transition-colors uppercase tracking-wider"
+              >Read Article</a
+            >
+          </div>
+        </div>
+
+        <div
+          data-category="genomic"
+          data-page="1"
+          class="article-card space-y-4 flex flex-col justify-between transition-all duration-300"
+        >
+          <div class="space-y-4">
+            <img
+              src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Genetics book and digital data screen"
+              class="w-full h-56 object-cover rounded shadow-sm"
+            />
+            <div
+              class="flex items-center gap-4 text-xs font-medium text-forest/60"
+            >
+              <span>Genomic Science</span>
+              <span>•</span>
+              <span>February 04, 2026</span>
+            </div>
+            <h3
+              class="text-xl font-serif text-forest hover:text-emerald transition-colors"
+            >
+              <a href="#"
+                >Pharmacogenomics: Customizing Drug Safety Profiles Through
+                Hereditary DNA Mapping</a
+              >
+            </h3>
+            <p class="text-sm text-forest/70 font-light leading-relaxed">
+              How precise genetic sequence analysis gives providers the data
+              required to forecast adverse reactions and optimize medication
+              dosing metrics accurately.
+            </p>
+          </div>
+          <div class="pt-2">
+            <a
+              href="#"
+              class="text-xs font-semibold text-emerald hover:text-emeraldHover transition-colors uppercase tracking-wider"
+              >Read Article</a
+            >
+          </div>
+        </div>
+
+        <div
+          data-category="clinical"
+          data-page="2"
+          class="article-card hidden space-y-4 flex flex-col justify-between transition-all duration-300"
+        >
+          <div class="space-y-4">
+            <img
+              src="https://images.unsplash.com/photo-1532187863486-abf9d39d6618?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Biotech cellular view"
+              class="w-full h-56 object-cover rounded shadow-sm"
+            />
+            <div
+              class="flex items-center gap-4 text-xs font-medium text-forest/60"
+            >
+              <span>Clinical Studies</span>
+              <span>•</span>
+              <span>January 15, 2026</span>
+            </div>
+            <h3
+              class="text-xl font-serif text-forest hover:text-emerald transition-colors"
+            >
+              <a href="#"
+                >Biomarker Identification Strategies Tagging Early Cellular
+                Senescence Markers</a
+              >
+            </h3>
+            <p class="text-sm text-forest/70 font-light leading-relaxed">
+              An overview of clinical protocols monitoring cellular division
+              health curves to forecast age-associated functional adaptations.
+            </p>
+          </div>
+          <div class="pt-2">
+            <a
+              href="#"
+              class="text-xs font-semibold text-emerald hover:text-emeraldHover transition-colors uppercase tracking-wider"
+              >Read Article</a
+            >
+          </div>
+        </div>
+
+        <div
+          data-category="genomic"
+          data-page="2"
+          class="article-card hidden space-y-4 flex flex-col justify-between transition-all duration-300"
+        >
+          <div class="space-y-4">
+            <img
+              src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="DNA profile structure analysis"
+              class="w-full h-56 object-cover rounded shadow-sm"
+            />
+            <div
+              class="flex items-center gap-4 text-xs font-medium text-forest/60"
+            >
+              <span>Genomic Science</span>
+              <span>•</span>
+              <span>January 08, 2026</span>
+            </div>
+            <h3
+              class="text-xl font-serif text-forest hover:text-emerald transition-colors"
+            >
+              <a href="#"
+                >Hereditary Sequencing Protocols and Longevity Projections
+                Matrix</a
+              >
+            </h3>
+            <p class="text-sm text-forest/70 font-light leading-relaxed">
+              Evaluating long-term health outcomes derived from preventative
+              clinical genomic sequencing frameworks inside selected cohorts.
+            </p>
+          </div>
+          <div class="pt-2">
+            <a
+              href="#"
+              class="text-xs font-semibold text-emerald hover:text-emeraldHover transition-colors uppercase tracking-wider"
+              >Read Article</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center items-center gap-6 mt-20 pt-8 border-t border-sage/10 text-sm"
+      >
+        <button
+          id="prev-page-btn"
+          class="text-forest/40 font-medium disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none"
+        >
+          ← Previous
+        </button>
+        <span
+          id="page-indicator"
+          class="font-medium px-3 py-1 bg-forest text-mint rounded-full text-xs transition-all"
+          >1</span
+        >
+        <button
+          id="next-page-btn"
+          class="text-forest font-medium hover:text-emerald disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none"
+        >
+          Next →
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="subscribe"
+      class="bg-forest text-mint py-24 px-6 border-t border-sage/10 text-center relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-5 pointer-events-none">
+        <div
+          class="absolute inset-0 bg-[radial-gradient(#8FA697_1px,transparent_1px)] [background-size:24px_24px]"
+        ></div>
+      </div>
+      <div class="max-w-2xl mx-auto space-y-6 relative z-10">
+        <span
+          class="text-xs font-semibold text-sage uppercase tracking-widest block"
+          >Medical Intelligence Briefings</span
+        >
+        <h2 class="text-3xl md:text-4xl font-serif">
+          Receive updates on our clinical observations.
+        </h2>
+        <p
+          class="text-mint/70 font-light text-sm leading-relaxed max-w-lg mx-auto"
+        >
+          We issue peer-reviewed research conclusions, upcoming diagnostic
+          availability dates, and clinical whitepapers monthly. No advertising
+          content.
+        </p>
+        <form class="pt-6 flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Your Medical or Professional Email"
+            class="w-full bg-white/10 border border-mint/20 rounded px-4 py-3 text-sm focus:outline-none focus:border-sage placeholder-mint/40 text-mint"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-emerald hover:bg-emeraldHover text-white px-6 py-3 rounded text-sm font-medium transition-all whitespace-nowrap shadow-md"
+          >
+            Subscribe Briefings
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-forest py-16 px-6 text-mint/80 border-t border-mint/10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-mint/10 pb-12 mb-8"
+      >
+        <div>
+          <div
+            class="text-2xl font-serif font-semibold tracking-wide text-mint mb-6"
+          >
+            AURA
+          </div>
+          <p class="text-sm font-light mb-2">100 Concierge Plaza, Suite 400</p>
+          <p class="text-sm font-light mb-6">New York, NY 10001</p>
+          <a
+            href="mailto:inquiries@auraprecision.com"
+            class="block text-sm font-light hover:text-sage transition-colors"
+            >inquiries@auraprecision.com</a
+          >
+          <a
+            href="tel:+18005550199"
+            class="block text-sm font-light mt-1 hover:text-sage transition-colors"
+            >+1 (800) 555-0199</a
+          >
+        </div>
+        <div class="flex flex-col space-y-3">
+          <h4 class="text-mint font-medium mb-2 text-sm tracking-wide">
+            Navigation
+          </h4>
+          <a
+            href="/services.html"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Services</a
+          >
+          <a
+            href="/physicians.html"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Physicians</a
+          >
+          <a
+            href="/about.html"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >About Us</a
+          >
+          <a
+            href="#news"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >News and Updates</a
+          >
+        </div>
+        <div class="flex flex-col space-y-3">
+          <h4 class="text-mint font-medium mb-2 text-sm tracking-wide">
+            Legal & Compliance
+          </h4>
+          <a
+            href="#"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >HIPAA Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Terms of Service</a
+          >
+          <a
+            href="#"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Accessibility Statement</a
+          >
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto text-xs font-light flex justify-between items-center text-mint/60"
+      >
+        <p>&copy; 2026 Aura Precision Health. All rights reserved.</p>
+        <p>Advanced Clinical Case Study Layout</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const categoryButtons = document.querySelectorAll("[data-cat-filter]");
+        const cards = document.querySelectorAll(".article-card");
+        const prevBtn = document.getElementById("prev-page-btn");
+        const nextBtn = document.getElementById("next-page-btn");
+        const pageIndicator = document.getElementById("page-indicator");
+
+        let currentCategory = "all";
+        let currentPage = 1;
+        const itemsPerPage = 3;
+
+        // Core Rendering Pipeline Engine
+        function updateNewsGrid() {
+          // Filter matching layout targets down based on dynamic taxonomy structures
+          const filteredCards = Array.from(cards).filter((card) => {
+            const cardCat = card.getAttribute("data-category");
+            return currentCategory === "all" || cardCat === currentCategory;
+          });
+
+          // Calculate pagination capacities relative to remaining metrics visibility
+          const totalPages =
+            Math.ceil(filteredCards.length / itemsPerPage) || 1;
+
+          // Clamp bounds protection layers
+          if (currentPage > totalPages) currentPage = totalPages;
+          if (currentPage < 1) currentPage = 1;
+
+          // Determine indices layout markers
+          const startIndex = (currentPage - 1) * itemsPerPage;
+          const endIndex = startIndex + itemsPerPage;
+
+          // Process cards visibility states
+          Array.from(cards).forEach((card) => card.classList.add("hidden"));
+
+          filteredCards.forEach((card, index) => {
+            if (index >= startIndex && index < endIndex) {
+              card.classList.remove("hidden");
+            }
+          });
+
+          // System view status configurations
+          pageIndicator.textContent = currentPage;
+          prevBtn.disabled = currentPage === 1;
+          nextBtn.disabled = currentPage === totalPages;
+
+          // Update navigation disabled style elements
+          if (prevBtn.disabled) {
+            prevBtn.classList.add("text-forest/40", "cursor-not-allowed");
+            prevBtn.classList.remove("hover:text-emerald", "text-forest");
+          } else {
+            prevBtn.classList.remove("text-forest/40", "cursor-not-allowed");
+            prevBtn.classList.add("hover:text-emerald", "text-forest");
+          }
+
+          if (nextBtn.disabled) {
+            nextBtn.classList.add("text-forest/40", "cursor-not-allowed");
+            nextBtn.classList.remove("hover:text-emerald", "text-forest");
+          } else {
+            nextBtn.classList.remove("text-forest/40", "cursor-not-allowed");
+            nextBtn.classList.add("hover:text-emerald", "text-forest");
+          }
+        }
+
+        // Category Filter Bind Actions
+        categoryButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            currentCategory = btn.getAttribute("data-cat-filter");
+            currentPage = 1; // Reset window indices index boundary
+
+            // Toggle category button states
+            categoryButtons.forEach((b) => {
+              b.className =
+                "text-forest/60 hover:text-forest focus:outline-none transition-all pb-6 -mb-[26px]";
+            });
+            btn.className =
+              "text-emerald border-b-2 border-emerald pb-6 -mb-[26px] focus:outline-none transition-all";
+
+            updateNewsGrid();
+          });
+        });
+
+        // Pagination Click Bind Interventions
+        prevBtn.addEventListener("click", () => {
+          if (currentPage > 1) {
+            currentPage--;
+            updateNewsGrid();
+            document
+              .getElementById("articles-container")
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          currentPage++;
+          updateNewsGrid();
+          document
+            .getElementById("articles-container")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Trigger Initialize Layout
+        updateNewsGrid();
+      });
+    </script>
+  </body>
+</html>

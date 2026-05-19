@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Physicians | Aura Precision Health</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: "#0D2B1E" /* Deep, authoritative dark green */,
+              mint: "#F4F7F5" /* Very soft, clean off-white green for backgrounds */,
+              sage: "#8FA697" /* Muted, calming mid-tone green for accents */,
+              emerald:
+                "#2D6A4F" /* Rich green for primary CTAs and highlights */,
+              emeraldHover: "#1B4332" /* Darker emerald for hover states */,
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', "serif"],
+              sans: ['"DM Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-mint text-forest font-sans antialiased selection:bg-emerald selection:text-white"
+  >
+    <header
+      class="fixed w-full top-0 z-50 bg-mint/80 backdrop-blur-md border-b border-sage/10 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="index.html"
+          class="text-2xl font-serif font-semibold tracking-wide text-forest"
+        >
+          AURA
+        </a>
+
+        <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+          <a href="services.html" class="hover:text-emerald transition-colors"
+            >Services</a
+          >
+          <a href="physicians.html" class="hover:text-emerald transition-colors"
+            >Physicians</a
+          >
+          <a href="about us.html" class="hover:text-emerald transition-colors"
+            >About Us</a
+          >
+          <a
+            href="news and updates.html"
+            class="hover:text-emerald transition-colors"
+            >News and Updates</a
+          >
+        </nav>
+        <div class="hidden md:flex items-center">
+          <a
+            href="index.html#contact"
+            class="bg-emerald hover:bg-emeraldHover text-white px-6 py-2.5 rounded text-sm font-medium transition-all shadow-sm"
+            >Schedule Appointment</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-forest pt-40 pb-24 px-6 text-mint overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div
+          class="absolute inset-0 bg-[radial-gradient(#8FA697_1px,transparent_1px)] [background-size:16px_16px]"
+        ></div>
+      </div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <p
+          class="text-sage font-semibold tracking-widest text-xs uppercase mb-3"
+        >
+          Clinical Leadership
+        </p>
+        <h1 class="text-4xl md:text-6xl font-serif leading-tight mb-6">
+          Our Medical Faculty
+        </h1>
+        <p
+          class="text-lg text-mint/80 font-light leading-relaxed max-w-2xl mx-auto"
+        >
+          Aura is directed by board-certified clinicians, clinical
+          investigators, and industry specialists dedicated to translating
+          multi-omic research into predictive medical workflows.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="border-b border-sage/20 bg-white/50 backdrop-blur-sm sticky top-20 z-40 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto py-4 flex flex-wrap gap-4 items-center justify-center md:justify-start text-sm"
+      >
+        <span
+          class="text-xs font-semibold uppercase tracking-wider text-forest/40"
+          >Filter by Specialty:</span
+        >
+        <button
+          data-filter="all"
+          class="bg-forest text-mint px-4 py-1.5 rounded-full font-medium transition-all duration-200"
+        >
+          All Specializations
+        </button>
+        <button
+          data-filter="cardiology"
+          class="text-forest/80 hover:bg-forest/5 px-4 py-1.5 rounded-full transition-all duration-200"
+        >
+          Preventative Cardiology
+        </button>
+        <button
+          data-filter="radiology"
+          class="text-forest/80 hover:bg-forest/5 px-4 py-1.5 rounded-full transition-all duration-200"
+        >
+          Advanced Radiology
+        </button>
+        <button
+          data-filter="genomic"
+          class="text-forest/80 hover:bg-forest/5 px-4 py-1.5 rounded-full transition-all duration-200"
+        >
+          Genomic Medicine
+        </button>
+        <button
+          data-filter="endocrinology"
+          class="text-forest/80 hover:bg-forest/5 px-4 py-1.5 rounded-full transition-all duration-200"
+        >
+          Endocrinology
+        </button>
+      </div>
+    </section>
+
+    <section id="physicians" class="py-24 px-6 max-w-7xl mx-auto space-y-24">
+      <div
+        data-specialty="cardiology"
+        class="physician-profile grid grid-cols-1 md:grid-cols-12 gap-12 items-start py-8 border-b border-sage/20 transition-all duration-300"
+      >
+        <div class="md:col-span-4">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+            alt="Dr. Evelyn Thorne"
+            class="w-full h-auto object-cover rounded shadow-md border border-sage/20 mb-4"
+          />
+          <div class="space-y-1">
+            <h4
+              class="text-xs font-semibold text-emerald uppercase tracking-wider"
+            >
+              Clinical Focus
+            </h4>
+            <p class="text-sm text-forest/80">
+              Early-Stage Cardiovascular Plaque Analysis, Plaque Reversal
+              Bio-protocols, Advanced Lipid Evaluation.
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <div>
+            <h2 class="text-3xl font-serif text-forest">
+              Dr. Evelyn Thorne, MD, FACC
+            </h2>
+            <p
+              class="text-sm font-medium text-emerald uppercase tracking-widest mt-1"
+            >
+              Chief of Internal Medicine & Preventative Cardiology
+            </p>
+          </div>
+          <p class="text-forest/70 font-light leading-relaxed">
+            Dr. Thorne possesses over fifteen years of clinical practice
+            evaluating multi-factorial coronary abnormalities. Prior to
+            anchoring the Internal Medicine desk at Aura, she operated as an
+            Associate Professor of Cardiovascular Disease at the Johns Hopkins
+            School of Medicine and maintained an active translational research
+            laboratory tracking predictive ischemic stroke markers.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm pt-4 border-t border-sage/10"
+          >
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Education & Residency</span
+              >
+              <p class="text-forest/70 font-light">
+                MD — Harvard Medical School<br />Residency & Fellowship — Johns
+                Hopkins Hospital
+              </p>
+            </div>
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Board Certifications</span
+              >
+              <p class="text-forest/70 font-light">
+                American Board of Internal Medicine (Cardiovascular Disease),
+                National Board of Echocardiography.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-specialty="genomic"
+        class="physician-profile grid grid-cols-1 md:grid-cols-12 gap-12 items-start py-8 border-b border-sage/20 transition-all duration-300"
+      >
+        <div class="md:col-span-4">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+            alt="Dr. Marcus Vance"
+            class="w-full h-auto object-cover rounded shadow-md border border-sage/20 mb-4"
+          />
+          <div class="space-y-1">
+            <h4
+              class="text-xs font-semibold text-emerald uppercase tracking-wider"
+            >
+              Clinical Focus
+            </h4>
+            <p class="text-sm text-forest/80">
+              Pharmacogenomics, Hereditary Oncology Screening, Epigenetic
+              Modification Analysis.
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <div>
+            <h2 class="text-3xl font-serif text-forest">
+              Dr. Marcus Vance, PhD
+            </h2>
+            <p
+              class="text-sm font-medium text-emerald uppercase tracking-widest mt-1"
+            >
+              Director of Genomic Medicine & Molecular Pathology
+            </p>
+          </div>
+          <p class="text-forest/70 font-light leading-relaxed">
+            Dr. Vance bridges the gap between molecular diagnostics and
+            actionable therapeutic interventions. His academic path includes
+            extensive data model designs at Stanford Medicine’s Center for
+            Genomics, analyzing genetic mutation vectors linked to aggressive
+            cellular senescence. At Aura, he guides patient metabolic
+            customization paths by auditing raw targeted DNA sequences.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm pt-4 border-t border-sage/10"
+          >
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Education & Fellowships</span
+              >
+              <p class="text-forest/70 font-light">
+                PhD in Molecular Genetics — Stanford University<br />Post-Doctoral
+                Fellowship — European Molecular Biology Laboratory (EMBL)
+              </p>
+            </div>
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Academic Affiliations</span
+              >
+              <p class="text-forest/70 font-light">
+                Active Contributor to the Human Genome Variation Society (HGVS),
+                Consultant Panelist for Global Oncological Clinical Trials.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-specialty="radiology"
+        class="physician-profile grid grid-cols-1 md:grid-cols-12 gap-12 items-start py-8 border-b border-sage/20 transition-all duration-300"
+      >
+        <div class="md:col-span-4">
+          <img
+            src="https://images.unsplash.com/photo-1594824813573-246434e33963?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+            alt="Dr. Sarah Lin"
+            class="w-full h-auto object-cover rounded shadow-md border border-sage/20 mb-4"
+          />
+          <div class="space-y-1">
+            <h4
+              class="text-xs font-semibold text-emerald uppercase tracking-wider"
+            >
+              Clinical Focus
+            </h4>
+            <p class="text-sm text-forest/80">
+              3T Neuro-imaging, Subclinical Tumoral Localization, Whole-Body
+              Metabolic Volume Profiling.
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <div>
+            <h2 class="text-3xl font-serif text-forest">
+              Dr. Sarah Lin, MD, FRCPC
+            </h2>
+            <p
+              class="text-sm font-medium text-emerald uppercase tracking-widest mt-1"
+            >
+              Director of Advanced Diagnostic Imaging & Neuroradiology
+            </p>
+          </div>
+          <p class="text-forest/70 font-light leading-relaxed">
+            Dr. Lin guides the advanced multi-parametric scanning bays at Aura.
+            With professional expertise anchored in neurovascular structural
+            analysis, her work focuses on isolating early structural
+            modifications in cranial, visceral, and vascular tissue beds. She
+            previously served as an attending radiologist at the Mayo Clinic,
+            publishing heavily on AI-assisted localized MRI lesion parsing
+            frameworks.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm pt-4 border-t border-sage/10"
+          >
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Education & Residency</span
+              >
+              <p class="text-forest/70 font-light">
+                MD — Columbia University Vagelos College of Physicians and
+                Surgeons<br />Radiology Residency — Mayo Clinic (Rochester)
+              </p>
+            </div>
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Board Certifications</span
+              >
+              <p class="text-forest/70 font-light">
+                American Board of Radiology (Subspecialty: Neuroradiology
+                Certification).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-specialty="endocrinology"
+        class="physician-profile grid grid-cols-1 md:grid-cols-12 gap-12 items-start py-8 border-b border-sage/20 transition-all duration-300"
+      >
+        <div class="md:col-span-4">
+          <img
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+            alt="Dr. Robert Chen"
+            class="w-full h-auto object-cover rounded shadow-md border border-sage/20 mb-4"
+          />
+          <div class="space-y-1">
+            <h4
+              class="text-xs font-semibold text-emerald uppercase tracking-wider"
+            >
+              Clinical Focus
+            </h4>
+            <p class="text-sm text-forest/80">
+              Insulin Signaling Vectors, Neuroendocrine Dysregulation, Autonomic
+              Stress Signaling Profiles.
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <div>
+            <h2 class="text-3xl font-serif text-forest">Dr. Robert Chen, MD</h2>
+            <p
+              class="text-sm font-medium text-emerald uppercase tracking-widest mt-1"
+            >
+              Lead Clinician of Endocrinology & Autonomic Function
+            </p>
+          </div>
+          <p class="text-forest/70 font-light leading-relaxed">
+            Dr. Chen specializes in diagnostic investigations map tracking
+            endocrine architecture performance over multi-decade cycles. Before
+            aligning with Aura, he oversaw systemic metabolic homeostasis
+            clinical cohorts within Stanford Medicine's Department of
+            Endocrinology, developing structural insights regarding glycemic
+            trajectory variations and continuous monitoring configurations.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm pt-4 border-t border-sage/10"
+          >
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Education & Residency</span
+              >
+              <p class="text-forest/70 font-light">
+                MD — Yale School of Medicine<br />Residency & Fellowship —
+                Stanford Health Care
+              </p>
+            </div>
+            <div>
+              <span class="block font-semibold text-forest mb-1"
+                >Board Certifications</span
+              >
+              <p class="text-forest/70 font-light">
+                American Board of Internal Medicine (Subspecialty:
+                Endocrinology, Diabetes, and Metabolism).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-white py-24 px-6 border-t border-b border-sage/10 text-center"
+    >
+      <div class="max-w-4xl mx-auto space-y-6">
+        <h3
+          class="text-xs font-semibold text-emerald uppercase tracking-widest"
+        >
+          Scientific Rigor
+        </h3>
+        <h2 class="text-3xl font-serif text-forest">
+          Active Medical Board Contributions
+        </h2>
+        <p
+          class="text-forest/70 font-light leading-relaxed max-w-2xl mx-auto text-sm"
+        >
+          Our core practitioners do not simply apply traditional medical
+          frameworks—they consistently contribute peer-reviewed insights to
+          evolving clinical domains. Our faculty holds publishing footprints
+          inside notable medical literature resources.
+        </p>
+        <div
+          class="pt-8 grid grid-cols-2 md:grid-cols-4 gap-8 grayscale opacity-60 items-center justify-items-center"
+        >
+          <span
+            class="font-serif font-bold text-lg text-forest tracking-tighter"
+            >THE LANCET</span
+          >
+          <span
+            class="font-sans font-extrabold text-sm text-forest tracking-widest"
+            >NEJM</span
+          >
+          <span class="font-serif italic font-semibold text-lg text-forest"
+            >Nature Medicine</span
+          >
+          <span class="font-sans font-bold text-base text-forest">JACC</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="flex flex-col lg:flex-row bg-white">
+      <div
+        class="lg:w-1/2 min-h-[500px] bg-cover bg-center"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80&quot;);
+        "
+      ></div>
+      <div
+        class="lg:w-1/2 py-20 px-10 lg:px-20 flex flex-col justify-center bg-mint/50"
+      >
+        <h2 class="text-4xl font-serif mb-4 text-forest">
+          Consult with Our Clinical Specialists.
+        </h2>
+        <p class="text-forest/60 font-light mb-10 text-sm leading-relaxed">
+          Requesting an evaluation connects you directly with our specialized
+          intake desk. Kindly select your clinical diagnostic requirement below
+          to accurately route your charts to the appropriate physician.
+        </p>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="w-full pb-2 bg-transparent border-b border-sage/40 focus:outline-none focus:border-emerald transition-colors text-sm placeholder-forest/40"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="w-full pb-2 bg-transparent border-b border-sage/40 focus:outline-none focus:border-emerald transition-colors text-sm placeholder-forest/40"
+            />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full pb-2 bg-transparent border-b border-sage/40 focus:outline-none focus:border-emerald transition-colors text-sm placeholder-forest/40"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="w-full pb-2 bg-transparent border-b border-sage/40 focus:outline-none focus:border-emerald transition-colors text-sm placeholder-forest/40"
+            />
+          </div>
+          <select
+            class="w-full pb-2 bg-transparent border-b border-sage/40 focus:outline-none focus:border-emerald transition-colors text-sm text-forest/60"
+          >
+            <option value="" disabled selected>
+              Specific Attending Physician Desired
+            </option>
+            <option value="thorne">
+              Dr. Evelyn Thorne — Preventative Cardiology
+            </option>
+            <option value="vance">Dr. Marcus Vance — Genomic Medicine</option>
+            <option value="lin">
+              Dr. Sarah Lin — Advanced Diagnostic Imaging
+            </option>
+            <option value="general">
+              No Preference — General Clinical Intake Coordinator
+            </option>
+          </select>
+          <button
+            type="button"
+            class="mt-8 bg-emerald text-white px-8 py-4 rounded text-sm font-medium hover:bg-emeraldHover transition-all w-full md:w-auto shadow-lg shadow-emerald/20"
+          >
+            Request Specialist Review
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-forest py-16 px-6 text-mint/80">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-mint/10 pb-12 mb-8"
+      >
+        <div>
+          <div
+            class="text-2xl font-serif font-semibold tracking-wide text-mint mb-6"
+          >
+            AURA
+          </div>
+          <p class="text-sm font-light mb-2">100 Concierge Plaza, Suite 400</p>
+          <p class="text-sm font-light mb-6">New York, NY 10001</p>
+          <a
+            href="mailto:inquiries@auraprecision.com"
+            class="block text-sm font-light hover:text-sage transition-colors"
+            >inquiries@auraprecision.com</a
+          >
+          <a
+            href="tel:+18005550199"
+            class="block text-sm font-light mt-1 hover:text-sage transition-colors"
+            >+1 (800) 555-0199</a
+          >
+        </div>
+        <div class="flex flex-col space-y-3">
+          <h4 class="text-mint font-medium mb-2 text-sm tracking-wide">
+            Navigation
+          </h4>
+          <a
+            href="/services.html"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Services</a
+          >
+          <a
+            href="#physicians"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Physicians</a
+          >
+          <a
+            href="/#about"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >About Us</a
+          >
+          <a
+            href="/#news"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >News and Updates</a
+          >
+        </div>
+        <div class="flex flex-col space-y-3">
+          <h4 class="text-mint font-medium mb-2 text-sm tracking-wide">
+            Legal & Compliance
+          </h4>
+          <a
+            href="#"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >HIPAA Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Terms of Service</a
+          >
+          <a
+            href="#"
+            class="text-sm font-light hover:text-sage transition-colors"
+            >Accessibility Statement</a
+          >
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto text-xs font-light flex justify-between items-center text-mint/60"
+      >
+        <p>&copy; 2026 Aura Precision Health. All rights reserved.</p>
+        <p>Advanced Clinical Case Study Layout</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const filterButtons = document.querySelectorAll("[data-filter]");
+        const physicianProfiles =
+          document.querySelectorAll(".physician-profile");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const selectedFilter = button.getAttribute("data-filter");
+
+            // 1. Manage Active/Inactive Button Utility State Styles
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("bg-forest", "text-mint", "font-medium");
+              btn.classList.add("text-forest/80", "hover:bg-forest/5");
+            });
+
+            button.classList.add("bg-forest", "text-mint", "font-medium");
+            button.classList.remove("text-forest/80", "hover:bg-forest/5");
+
+            // 2. Filter Medical Profiles Layout Display
+            physicianProfiles.forEach((profile) => {
+              const targetSpecialty = profile.getAttribute("data-specialty");
+
+              if (
+                selectedFilter === "all" ||
+                targetSpecialty === selectedFilter
+              ) {
+                // Ensure profile is visible smoothly
+                profile.classList.remove("hidden");
+                setTimeout(() => {
+                  profile.style.opacity = "1";
+                  profile.style.transform = "translateY(0)";
+                }, 50);
+              } else {
+                // Hide profile
+                profile.style.opacity = "0";
+                profile.style.transform = "translateY(10px)";
+                profile.classList.add("hidden");
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
